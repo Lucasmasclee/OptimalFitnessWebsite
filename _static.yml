@@ -1,0 +1,4 @@
+static_sites:
+  - name: optimal-fitness
+    build_command: null
+    publish_dir: . 

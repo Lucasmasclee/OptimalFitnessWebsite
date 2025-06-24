@@ -18,7 +18,7 @@ This is a static website that can be easily deployed on Render. Follow these ste
 
 1. Push your code to a GitHub repository
 2. Go to [Render Dashboard](https://dashboard.render.com/)
-3. Click "New +" and select "Static Site"
+3. Click "New +" and select **"Static Site"** (NOT "Web Service")
 4. Connect your GitHub repository
 5. Configure the deployment:
    - **Name**: `optimal-fitness` (or your preferred name)
@@ -28,13 +28,20 @@ This is a static website that can be easily deployed on Render. Follow these ste
 
 ### Option 2: Manual Upload
 
-1. Zip your project files (`index.html`, `styles.css`)
+1. Zip your project files (`index.html`, `styles.css`, `README.md`)
 2. Go to [Render Dashboard](https://dashboard.render.com/)
-3. Click "New +" and select "Static Site"
+3. Click "New +" and select **"Static Site"**
 4. Choose "Upload Files"
 5. Upload your zip file
 6. Configure the deployment settings
 7. Click "Create Static Site"
+
+### Important Notes for Render Deployment:
+
+- **Make sure to select "Static Site" NOT "Web Service"** - This is crucial!
+- Static sites don't need a Dockerfile or build commands
+- Render will automatically serve your `index.html` file
+- The `_static.yml` file is included for Render's static site configuration
 
 ## Local Development
 
@@ -57,6 +64,7 @@ To run this website locally:
 OptimalFitnessWebsite/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
+├── _static.yml         # Render static site configuration
 └── README.md           # This file
 ```
 
