@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule Meeting - Optimal Fitness</title>
+    <title>Get a Demo - Optimal Fitness</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,64 +13,104 @@
             <h1 class="logo">Optimal Fitness</h1>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="schedule.html" class="nav-link active">Schedule Meeting</a>
+                <a href="services.html" class="nav-link">Services</a>
                 <a href="success-stories.html" class="nav-link">Success Stories</a>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="schedule.html" class="nav-link active">Get a Demo</a>
             </nav>
         </header>
         
         <main class="main-content">
             <div class="page-section">
-                <h2 class="page-title">Schedule Your Free Consultation</h2>
-                <p class="page-subtitle">Ready to start your fitness journey? Book a free consultation with our expert trainers.</p>
+                <h2 class="page-title">Get Your Free Demo</h2>
+                <p class="page-subtitle">See how our AI fitness app can transform your gym's member retention and attract more clients</p>
                 
-                <div class="schedule-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" class="form-input">
+                <div class="demo-content">
+                    <div class="demo-highlight">
+                        <h3>What You'll See in Your Demo</h3>
+                        <ul class="demo-features">
+                            <li>Live demonstration of our AI-powered fitness app</li>
+                            <li>How personalized workout plans are created</li>
+                            <li>Integration with your existing gym systems</li>
+                            <li>Analytics dashboard for member engagement</li>
+                            <li>Real examples of member success stories</li>
+                            <li>Pricing and implementation timeline</li>
+                        </ul>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" class="form-input">
+                    <div class="schedule-form">
+                        <h3>Schedule Your Personalized Demo</h3>
+                        <p>Fill out the form below and we'll contact you within 24 hours to schedule your free demo.</p>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gym-name">Gym Name</label>
+                            <input type="text" id="gym-name" name="gym-name" placeholder="Enter your gym name" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gym-size">Gym Size</label>
+                            <select id="gym-size" name="gym-size" class="form-input">
+                                <option value="">Select gym size</option>
+                                <option value="small">Small (1-500 members)</option>
+                                <option value="medium">Medium (500-2000 members)</option>
+                                <option value="large">Large (2000+ members)</option>
+                                <option value="chain">Gym Chain (Multiple locations)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Demo Date</label>
+                            <input type="date" id="date" name="date" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Preferred Demo Time</label>
+                            <select id="time" name="time" class="form-input">
+                                <option value="">Select a time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="challenges">Current Challenges</label>
+                            <textarea id="challenges" name="challenges" placeholder="Tell us about your current member retention challenges..." class="form-input" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goals">Goals for Your Gym</label>
+                            <textarea id="goals" name="goals" placeholder="What are your main goals for improving member retention and attracting new clients?" class="form-input" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Schedule My Free Demo</button>
+                        
+                        <p class="form-note">* No commitment required. This is a free consultation to see if our solution fits your gym's needs.</p>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="form-input">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="date">Preferred Date</label>
-                        <input type="date" id="date" name="date" class="form-input">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="time">Preferred Time</label>
-                        <select id="time" name="time" class="form-input">
-                            <option value="">Select a time</option>
-                            <option value="09:00">9:00 AM</option>
-                            <option value="10:00">10:00 AM</option>
-                            <option value="11:00">11:00 AM</option>
-                            <option value="14:00">2:00 PM</option>
-                            <option value="15:00">3:00 PM</option>
-                            <option value="16:00">4:00 PM</option>
-                            <option value="17:00">5:00 PM</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="goals">Fitness Goals</label>
-                        <textarea id="goals" name="goals" placeholder="Tell us about your fitness goals..." class="form-input" rows="4"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-large">Schedule Consultation</button>
                 </div>
             </div>
         </main>
         
         <footer class="footer">
-            <p>&copy; 2024 Optimal Fitness. All rights reserved.</p>
+            <p>&copy; 2025 Optimal Fitness. All rights reserved.</p>
         </footer>
     </div>
 </body>
