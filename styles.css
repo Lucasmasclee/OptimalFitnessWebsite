@@ -24,6 +24,10 @@ body {
 .header {
     padding: 2rem 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .logo {
@@ -32,6 +36,32 @@ body {
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: -0.02em;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .main-content {
@@ -65,6 +95,32 @@ body {
     color: #718096;
     margin-bottom: 2rem;
     font-weight: 400;
+}
+
+.page-section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #718096;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .cta-buttons {
@@ -108,6 +164,90 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+/* Form Styles */
+.schedule-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-input::placeholder {
+    color: #a0aec0;
+}
+
+/* Success Stories Styles */
+.success-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.success-number {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.success-content {
+    margin: 2rem 0;
+}
+
+.success-content p {
+    margin-bottom: 1rem;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* About Page Styles */
+.about-content {
+    margin: 2rem 0;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
 .footer {
     padding: 2rem 0;
     text-align: center;
@@ -121,11 +261,20 @@ body {
         font-size: 2rem;
     }
     
-    .hero-title {
+    .nav {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero-title, .page-title {
         font-size: 2rem;
     }
     
-    .hero-subtitle {
+    .hero-subtitle, .page-subtitle {
         font-size: 1rem;
     }
     
@@ -138,6 +287,10 @@ body {
         width: 100%;
         max-width: 200px;
     }
+    
+    .success-number {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -145,7 +298,7 @@ body {
         padding: 0 15px;
     }
     
-    .hero-section {
+    .hero-section, .page-section {
         padding: 2rem 1.5rem;
     }
     
@@ -153,7 +306,12 @@ body {
         font-size: 1.8rem;
     }
     
-    .hero-title {
+    .hero-title, .page-title {
         font-size: 1.8rem;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 } 
