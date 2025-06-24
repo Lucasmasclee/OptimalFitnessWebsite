@@ -1,6 +1,6 @@
 # Optimal Fitness Website
 
-A simple, modern landing page for Optimal Fitness built with HTML and CSS.
+A simple, modern landing page for Optimal Fitness built with HTML and CSS, deployed as a web service on Render.
 
 ## Features
 
@@ -9,44 +9,50 @@ A simple, modern landing page for Optimal Fitness built with HTML and CSS.
 - Gradient background
 - Interactive buttons
 - Mobile-friendly
+- Dockerized for easy deployment
 
 ## Deployment on Render
 
-This is a static website that can be easily deployed on Render. Follow these steps:
+This website is configured as a web service that can be deployed on Render. Follow these steps:
 
 ### Option 1: Direct Deploy (Recommended)
 
 1. Push your code to a GitHub repository
 2. Go to [Render Dashboard](https://dashboard.render.com/)
-3. Click "New +" and select **"Static Site"** (NOT "Web Service")
+3. Click "New +" and select **"Web Service"**
 4. Connect your GitHub repository
 5. Configure the deployment:
    - **Name**: `optimal-fitness` (or your preferred name)
-   - **Build Command**: Leave empty (not needed for static sites)
-   - **Publish Directory**: Leave empty (Render will auto-detect)
-6. Click "Create Static Site"
+   - **Environment**: Docker
+   - **Build Command**: Leave empty (Dockerfile handles this)
+   - **Start Command**: Leave empty (Dockerfile handles this)
+6. Click "Create Web Service"
 
-### Option 2: Manual Upload
+### Option 2: Using render.yaml (Auto-deploy)
 
-1. Zip your project files (`index.html`, `styles.css`, `README.md`)
+If you have the `render.yaml` file in your repository:
+1. Push your code to GitHub
 2. Go to [Render Dashboard](https://dashboard.render.com/)
-3. Click "New +" and select **"Static Site"**
-4. Choose "Upload Files"
-5. Upload your zip file
-6. Configure the deployment settings
-7. Click "Create Static Site"
-
-### Important Notes for Render Deployment:
-
-- **Make sure to select "Static Site" NOT "Web Service"** - This is crucial!
-- Static sites don't need a Dockerfile or build commands
-- Render will automatically serve your `index.html` file
-- The `_static.yml` file is included for Render's static site configuration
+3. Click "New +" and select "Blueprint"
+4. Connect your GitHub repository
+5. Render will automatically detect and use the `render.yaml` configuration
 
 ## Local Development
 
 To run this website locally:
 
+### Using Docker:
+```bash
+# Build the Docker image
+docker build -t optimal-fitness .
+
+# Run the container
+docker run -p 8080:80 optimal-fitness
+
+# Visit http://localhost:8080
+```
+
+### Without Docker:
 1. Clone or download the project files
 2. Open `index.html` in your web browser
 3. Or use a local server:
@@ -64,9 +70,17 @@ To run this website locally:
 OptimalFitnessWebsite/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
-├── _static.yml         # Render static site configuration
+├── Dockerfile          # Docker configuration for web service
+├── render.yaml         # Render deployment configuration
 └── README.md           # This file
 ```
+
+## Docker Configuration
+
+The `Dockerfile` uses nginx to serve the static files:
+- Based on nginx:alpine for a lightweight container
+- Copies HTML and CSS files to nginx's serving directory
+- Exposes port 80 for web traffic
 
 ## Customization
 
