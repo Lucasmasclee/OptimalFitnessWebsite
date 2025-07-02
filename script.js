@@ -41,12 +41,12 @@ function initNavigation() {
         }
     });
 
-    // CTA buttons
+    // CTA buttons - open Calendly link in new tab
     const ctaButtons = document.querySelectorAll('.btn--primary, .nav__cta, .cta__button');
     ctaButtons.forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            openModal();
+            window.open('https://calendly.com/optimalfitnessapp/30min', '_blank', 'noopener');
         });
     });
 }
