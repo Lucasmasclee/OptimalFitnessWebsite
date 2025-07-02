@@ -3,87 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimal Fitness</title>
+    <title>Optimal Fitness - Keep Your Members. Grow Your Gym.</title>
+    <meta name="description" content="Optimal Fitness is the beginner-focused app that helps gym owners retain members and grow their business. Schedule a demo call today.">
+    <meta name="keywords" content="gym app, member retention, fitness app, gym software, workout plans, diet plans">
+    <meta name="author" content="Optimal Fitness">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://optimalfitness.com/">
+    <meta property="og:title" content="Optimal Fitness - Keep Your Members. Grow Your Gym.">
+    <meta property="og:description" content="The beginner-focused app that helps gym owners retain members and grow their business.">
+    <meta property="og:image" content="https://optimalfitness.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://optimalfitness.com/">
+    <meta property="twitter:title" content="Optimal Fitness - Keep Your Members. Grow Your Gym.">
+    <meta property="twitter:description" content="The beginner-focused app that helps gym owners retain members and grow their business.">
+    <meta property="twitter:image" content="https://optimalfitness.com/og-image.jpg">
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="logo">Optimal Fitness</h1>
-            <nav class="nav">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="success-stories.html" class="nav-link">Success Stories</a>
-                <a href="schedule.html" class="nav-link">Get a Demo</a>
-            </nav>
-        </header>
-        
-        <main class="main-content">
-            <!-- Hero Quote Section -->
-            <section class="hero-quote">
-                <div class="quote-container">
-                    <blockquote class="main-quote">
-                        "We help gyms get more clients, and reduce the loss of members"
-                    </blockquote>
-                </div>
-            </section>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2>Optimal Fitness</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#benefits" class="nav__link">Benefits</a></li>
+                <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+                <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                <li><a href="#contact" class="nav__link">Book a Call</a></li>
+            </ul>
+            <button class="nav__cta">Book a Demo Call</button>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-            <!-- Services Section -->
-            <section class="page-segment" id="services">
-                <div class="segment-content">
-                    <div class="segment-image">
-                        <div class="image-placeholder">
-                            <span>AI Fitness App</span>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Keep Your Members. Grow Your Gym.</h1>
+                <p class="hero__subtitle">Optimal Fitness is the beginner-focused app that helps your members stay committed and see results.</p>
+                <p class="hero__description">Gyms lose members who feel lost or unmotivated. Our app solves that.</p>
+                <button class="btn btn--primary hero__cta">Schedule a Demo Call</button>
+            </div>
+            <div class="hero__visual">
+                <div class="app-mockup">
+                    <div class="phone-frame">
+                        <div class="screen">
+                            <div class="app-header">
+                                <div class="app-icon"></div>
+                                <span>Optimal Fitness</span>
+                            </div>
+                            <div class="workout-card">
+                                <h4>Today's Workout</h4>
+                                <p>Upper Body Strength</p>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="segment-text">
-                        <h2>Our AI-Powered Solution</h2>
-                        <p>We provide gyms with an intelligent fitness app that creates personalized workout plans for beginners. Our AI understands each member's fitness level, goals, and limitations, delivering clear, step-by-step instructions that eliminate confusion and uncertainty.</p>
-                        <p>When members have a clear path to success, they're more likely to stay committed and achieve their goals. Our app transforms the gym experience from overwhelming to empowering.</p>
-                        <a href="services.html" class="btn btn-primary">Learn More About Our Services</a>
-                    </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Success Stories Section -->
-            <section class="page-segment" id="success-stories">
-                <div class="segment-content">
-                    <div class="segment-image">
-                        <div class="image-placeholder">
-                            <span>Success Stories</span>
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution" id="benefits">
+        <div class="container">
+            <h2 class="section__title">Your Members Deserve a Better Start</h2>
+            <div class="problem-solution__grid">
+                <div class="problem-solution__column">
+                    <h3 class="problem-solution__subtitle">The Problem</h3>
+                    <div class="problem-solution__items">
+                        <div class="problem-solution__item problem">
+                            <i class="fas fa-times-circle"></i>
+                            <p>Members quit because they don't see results</p>
+                        </div>
+                        <div class="problem-solution__item problem">
+                            <i class="fas fa-times-circle"></i>
+                            <p>Trainers can't support everyone</p>
+                        </div>
+                        <div class="problem-solution__item problem">
+                            <i class="fas fa-times-circle"></i>
+                            <p>Your gym looks just like the one down the street</p>
                         </div>
                     </div>
-                    <div class="segment-text">
-                        <h2>Proven Results</h2>
-                        <p>Don't just take our word for it. We've helped over 5000 clients achieve their dream physique through our systematic approach. Our success stories speak volumes about the effectiveness of our AI-powered fitness plans.</p>
-                        <p>From complete beginners to advanced athletes, our platform has consistently delivered results that keep members motivated and gyms thriving. See the transformations and read the testimonials that prove our method works.</p>
-                        <a href="success-stories.html" class="btn btn-primary">View Success Stories</a>
-                    </div>
                 </div>
-            </section>
-
-            <!-- Get Demo Section -->
-            <section class="page-segment" id="demo">
-                <div class="segment-content">
-                    <div class="segment-image">
-                        <div class="image-placeholder">
-                            <span>Get Demo</span>
+                <div class="problem-solution__column">
+                    <h3 class="problem-solution__subtitle">The Solution</h3>
+                    <div class="problem-solution__items">
+                        <div class="problem-solution__item solution">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Optimal Fitness gives your members structure</p>
+                        </div>
+                        <div class="problem-solution__item solution">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Fully guided fitness and diet plans</p>
+                        </div>
+                        <div class="problem-solution__item solution">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Improve retention, referrals, and results</p>
                         </div>
                     </div>
-                    <div class="segment-text">
-                        <h2>See It In Action</h2>
-                        <p>Ready to transform your gym's member retention and attract more clients? Schedule a personalized demo to see how our AI fitness app works in real-time.</p>
-                        <p>Our team will walk you through the platform, show you how it integrates with your existing systems, and demonstrate the impact it can have on your business. Book your free consultation today.</p>
-                        <a href="schedule.html" class="btn btn-primary">Get Your Free Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section__title">How It Works</h2>
+            <div class="steps__grid">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <h3 class="step__title">You partner with Optimal Fitness</h3>
+                    <p class="step__description">We work with gyms like yours to provide the best member experience.</p>
+                    <div class="step__icon">
+                        <i class="fas fa-handshake"></i>
                     </div>
                 </div>
-            </section>
-        </main>
-        
-        <footer class="footer">
-            <p>&copy; 2025 Optimal Fitness. All rights reserved.</p>
-        </footer>
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <h3 class="step__title">We customize the app with your branding</h3>
+                    <p class="step__description">Your members see your gym's logo and colors throughout the app.</p>
+                    <div class="step__icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <h3 class="step__title">Your members download the app and follow clear plans</h3>
+                    <p class="step__description">Personalized workouts and nutrition guidance for every member.</p>
+                    <div class="step__icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__number">4</div>
+                    <h3 class="step__title">You get happier members who stay longer</h3>
+                    <p class="step__description">Increased retention and referrals from satisfied members.</p>
+                    <div class="step__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section__title">What Gym Owners Are Saying</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <p>"We've seen a 25% increase in member retention since offering Optimal Fitness. Our members love having a personal coach in their pocket."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial__info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Gym Owner, Amsterdam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <p>"Optimal Fitness has transformed how our members approach fitness. The structured plans keep them motivated and coming back."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial__info">
+                            <h4>Mike Rodriguez</h4>
+                            <p>Fitness Center Owner, Berlin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <p>"The app helps us stand out from competitors. Our members appreciate the personalized approach and clear guidance."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial__info">
+                            <h4>Emma Thompson</h4>
+                            <p>Wellness Studio Owner, London</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Ready to Keep More Members?</h2>
+                <p class="cta__description">Let's show you how Optimal Fitness can transform your gym.</p>
+                <button class="btn btn--primary cta__button">Schedule a Call Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section__title">Frequently Asked Questions</h2>
+            <div class="faq__grid">
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Can I customize the app for my gym?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Yes! We customize the app with your gym's branding, colors, and logo. Your members will see your gym's identity throughout the app experience.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>What does it cost?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Pricing is based on your gym's size and member count. We offer flexible plans that scale with your business. Schedule a call to get a custom quote.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>How quickly can we get started?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>We can have your branded app ready in as little as 2 weeks. The onboarding process is simple and we provide full support to get your members started.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Is it only for beginners?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>While we specialize in beginner-friendly content, the app includes plans for all fitness levels. Members can progress through different difficulty levels as they improve.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Does it work on iOS and Android?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Yes! The Optimal Fitness app is available on both iOS and Android devices. Your members can download it from the App Store or Google Play Store.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Optimal Fitness</h3>
+                    <p>Helping gyms retain members and grow their business through personalized fitness technology.</p>
+                    <div class="footer__social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> hello@optimalfitness.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Optimal Fitness. All rights reserved.</p>
+                <p class="footer__disclaimer">Optimal Fitness is not a medical or personal training service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Schedule Your Demo Call</h3>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <p>Book a 15-minute call to see how Optimal Fitness can transform your gym.</p>
+                <!-- Calendly inline widget -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/optimalfitness/demo" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html> 
