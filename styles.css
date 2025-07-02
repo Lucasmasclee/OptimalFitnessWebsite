@@ -801,4 +801,644 @@ html {
 
 .progress {
     animation: progress 2s ease-out;
+}
+
+/* App Overview Section */
+.app-overview {
+    padding: 80px 0;
+    background: var(--text-white);
+}
+
+.section__subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.feature h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.feature p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Workout Plans Section */
+.workout-plans {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.section__split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.section__split.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.section__content h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.section__content p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.plan-types {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.plan-type {
+    padding: 1.5rem;
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.plan-type:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.plan-type h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.plan-type h4 i {
+    font-size: 1.2rem;
+}
+
+.plan-type p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+/* App Screenshot Styles */
+.app-screenshot {
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot-frame {
+    width: 300px;
+    height: 600px;
+    background: var(--text-dark);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: var(--shadow-lg);
+}
+
+.screenshot-content {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-light);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.workout-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.workout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.workout-item.active {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+
+.workout-name {
+    font-weight: 600;
+}
+
+.workout-duration {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.nutrition-card {
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.nutrition-card h4 {
+    margin-bottom: 15px;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.meal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.meal-item:last-child {
+    border-bottom: none;
+}
+
+.meal-name {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.meal-calories {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Nutrition Section */
+.nutrition-section {
+    padding: 80px 0;
+    background: var(--text-white);
+}
+
+.nutrition-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nutrition-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.nutrition-feature:hover {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+
+.nutrition-feature i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.nutrition-feature:hover i {
+    color: var(--text-white);
+}
+
+/* Brand Customization Section */
+.brand-customization {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.customization__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.customization__item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.customization__item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.customization__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.customization__item h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.customization__item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .section__split {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .section__split.reverse {
+        grid-template-columns: 1fr;
+    }
+    
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .customization__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .screenshot-frame {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+/* Partnership Model Section */
+.partnership-model {
+    padding: 80px 0;
+    background: var(--text-white);
+}
+
+.partnership__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.partnership__item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.partnership__item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.partnership__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.partnership__item h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.partnership__item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Onboarding Section */
+.onboarding {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.onboarding__timeline {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    position: relative;
+}
+
+.onboarding__timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary-color);
+}
+
+.timeline__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline__number {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline__content {
+    background: var(--text-white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    flex: 1;
+}
+
+.timeline__content h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.timeline__content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.timeline__duration {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--text-white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 80px 0;
+    background: var(--text-white);
+}
+
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing__tier {
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.pricing__tier:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing__tier.featured {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing__badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--text-white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.pricing__header h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.pricing__price {
+    margin-bottom: 1rem;
+}
+
+.pricing__price .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.pricing__price .period {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.pricing__header p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.pricing__features {
+    text-align: left;
+}
+
+.pricing__feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.pricing__feature i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.pricing__feature span {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.pricing__note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+}
+
+.pricing__note p {
+    margin: 0;
+    color: var(--text-dark);
+}
+
+/* Support Section */
+.support {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.support__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.support__item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.support__item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.support__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.support__item h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.support__item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .partnership__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .onboarding__timeline::before {
+        left: 20px;
+    }
+    
+    .timeline__number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .timeline__content {
+        padding: 1.5rem;
+    }
+    
+    .pricing__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing__tier.featured {
+        transform: none;
+    }
+    
+    .support__grid {
+        grid-template-columns: 1fr;
+    }
 } 
