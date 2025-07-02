@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary-color: #46B9A2;
+    --primary-dark: #3a9a87;
     --secondary-color: #10b981;
     --accent-color: #f59e0b;
     --text-dark: #1f2937;
@@ -74,6 +74,9 @@ p {
 .btn--primary {
     background: var(--primary-color);
     color: var(--text-white);
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
 }
 
 .btn--primary:hover {
@@ -127,15 +130,19 @@ p {
     background: var(--primary-color);
     color: var(--text-white);
     border: none;
-    padding: 10px 20px;
+    padding: 14px 28px;
     border-radius: var(--border-radius);
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
+    box-shadow: var(--shadow);
+    font-size: 1rem;
 }
 
 .nav__cta:hover {
     background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 .nav__toggle {
@@ -463,14 +470,22 @@ p {
 }
 
 .cta__button {
-    background: var(--accent-color);
+    background: var(--primary-color);
     color: var(--text-white);
-    font-size: 1.1rem;
-    padding: 15px 30px;
+    font-size: 1.2rem;
+    padding: 18px 36px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
 }
 
 .cta__button:hover {
-    background: #d97706;
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* FAQ Section */
