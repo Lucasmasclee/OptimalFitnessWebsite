@@ -161,10 +161,17 @@ p {
 }
 
 .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 2rem;
+}
+
+.hero__content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero__title {
@@ -519,9 +526,9 @@ p {
 }
 
 .step__title {
-    margin: 0 0.5rem 1rem;
+    margin: 0 0.1rem 1rem;
     color: var(--text-dark);
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     max-width: 220px;
     text-align: center;
     word-break: keep-all;
@@ -1866,4 +1873,16 @@ html {
     max-width: 260px;
     width: 100%;
     height: auto;
+}
+
+/* Remove white space between CTA and footer */
+.cta + section, .cta + .faq, .cta + .faq-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* If there's a global section spacing, reduce it for the last section before footer */
+.faq, .faq-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 } 
