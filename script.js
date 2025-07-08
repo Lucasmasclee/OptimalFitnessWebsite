@@ -46,7 +46,7 @@ function initNavigation() {
     ctaButtons.forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            window.open('https://calendly.com/optimalfitnessapp/30min', '_blank', 'noopener');
+            window.open('https://calendly.com/d/csvk-s7y-5x5/fitnessapp-demo', '_blank', 'noopener');
         });
     });
 }

@@ -106,7 +106,7 @@ To connect your actual Calendly account:
 
 1. Replace the placeholder URL in the modal:
    ```html
-   <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_USERNAME/demo"></div>
+   <div class="calendly-inline-widget" data-url="https://calendly.com/d/csvk-s7y-5x5/fitnessapp-demo"></div>
    ```
 
 2. Update the Calendly script with your account details
