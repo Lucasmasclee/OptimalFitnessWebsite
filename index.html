@@ -39,6 +39,10 @@
                 <li><a href="app.html" class="nav__link">The App</a></li>
                 <li><a href="services.html" class="nav__link">Services</a></li>
             </ul>
+            <div class="nav__language">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="nl">NL</button>
+            </div>
             <button class="nav__cta">Get a Demo</button>
             <div class="nav__toggle">
                 <i class="fas fa-bars"></i>
@@ -66,47 +70,165 @@
     <!-- Problem/Solution Section -->
     <section class="problem-solution" id="benefits">
         <div class="container">
-            <h2 class="section__title">The Real Cost of Member Confusion</h2>
-            <div class="problem-solution__grid">
+            <h2 class="section__title" id="problemSolutionTitle">The Real Cost of Member Confusion</h2>
+            <div class="problem-solution__grid single-language">
                 <div class="problem-solution__column">
-                    <h3 class="problem-solution__subtitle">What's Killing Your Retention</h3>
-                    <div class="problem-solution__items">
-                        <div class="problem-solution__item problem">
-                            <i class="fas fa-times-circle"></i>
-                            <p><strong>50% of new members quit within 3 months</strong></p>
-                        </div>
-                        <div class="problem-solution__item problem">
-                            <i class="fas fa-times-circle"></i>
-                            <p><strong>Your trainers can't support everyone</strong> - leaving most members without guidance</p>
-                        </div>
-                        <div class="problem-solution__item problem">
-                            <i class="fas fa-times-circle"></i>
-                            <p><strong>You look like every other gym</strong> - no competitive advantage</p>
-                        </div>
-                        <div class="problem-solution__item problem">
-                            <i class="fas fa-times-circle"></i>
-                            <p><strong>Lost revenue from preventable cancellations</strong> - $600+ per member per year</p>
-                        </div>
+                    <h3 class="problem-solution__subtitle" id="problemsTitle">What's Killing Your Retention</h3>
+                    <div class="problem-solution__items" id="problemsList">
+                        <!-- Problems will be injected here by JS -->
                     </div>
                 </div>
                 <div class="problem-solution__column">
-                    <h3 class="problem-solution__subtitle">How Optimal Fitness Fixes It</h3>
-                    <div class="problem-solution__items">
-                        <div class="problem-solution__item solution">
-                            <i class="fas fa-check-circle"></i>
-                            <p><strong>Guided workout plans</strong> eliminate confusion and keep members engaged</p>
+                    <h3 class="problem-solution__subtitle" id="solutionsTitle">How Optimal Fitness Fixes It</h3>
+                    <div class="problem-solution__items" id="solutionsList">
+                        <!-- Solutions will be injected here by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Services Section -->
+    <section class="complete-services" id="complete-services">
+        <div class="container">
+            <h2 class="section__title">Complete Gym Partnership - Everything Included</h2>
+            <p class="section__subtitle">We handle every aspect of your fitness app implementation, from design to delivery and ongoing support.</p>
+            
+            <div class="services__grid">
+                <div class="service__category">
+                    <h3 class="service__category-title">
+                        <i class="fas fa-palette"></i>
+                        Design & Branding
+                    </h3>
+                    <div class="service__items">
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Custom Flyer Design</h4>
+                                <p>Professional flyers designed specifically for your gym's branding and style</p>
+                            </div>
                         </div>
-                        <div class="problem-solution__item solution">
-                            <i class="fas fa-check-circle"></i>
-                            <p><strong>Personalized nutrition guidance</strong> accelerates results and motivation</p>
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Personalized Gym Branding</h4>
+                                <p>All materials customized with your gym's name, logo, and contact information</p>
+                            </div>
                         </div>
-                        <div class="problem-solution__item solution">
-                            <i class="fas fa-check-circle"></i>
-                            <p><strong>Modernize your gym</strong> differentiates you from competitors</p>
+                    </div>
+                </div>
+
+                <div class="service__category">
+                    <h3 class="service__category-title">
+                        <i class="fas fa-shipping-fast"></i>
+                        Delivery & Setup
+                    </h3>
+                    <div class="service__items">
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Physical Delivery Service</h4>
+                                <p>We research and arrange delivery of all materials directly to your gym address</p>
+                            </div>
                         </div>
-                        <div class="problem-solution__item solution">
-                            <i class="fas fa-check-circle"></i>
-                            <p><strong>Proven retention increase</strong> - more members stay long-term</p>
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>QR Code Setup</h4>
+                                <p>Custom QR codes created and configured for instant member access</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__category">
+                    <h3 class="service__category-title">
+                        <i class="fas fa-credit-card"></i>
+                        Billing & Administration
+                    </h3>
+                    <div class="service__items">
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Automatic Direct Debit</h4>
+                                <p>Seamless payment processing with automatic monthly billing</p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Automatic Invoicing</h4>
+                                <p>Professional invoices generated and sent automatically each month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__category">
+                    <h3 class="service__category-title">
+                        <i class="fas fa-envelope"></i>
+                        Email Marketing
+                    </h3>
+                    <div class="service__items">
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Monthly Member Updates</h4>
+                                <p>Regular emails to your members about app updates, new features, and challenges</p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Non-Member Promotions</h4>
+                                <p>Monthly promotional emails to attract new members to your gym</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__category">
+                    <h3 class="service__category-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Analytics & Reporting
+                    </h3>
+                    <div class="service__items">
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Monthly Gym Statistics</h4>
+                                <p>Detailed reports on app usage, member engagement, and retention metrics</p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Impact Measurement</h4>
+                                <p>Clear data showing how our service has helped improve your member retention</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__category">
+                    <h3 class="service__category-title">
+                        <i class="fas fa-share-alt"></i>
+                        Social Media Support
+                    </h3>
+                    <div class="service__items">
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Instagram Posts</h4>
+                                <p>Professional social media content for your Instagram to promote the app</p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <i class="fas fa-check"></i>
+                            <div class="service__item-content">
+                                <h4>Facebook Content</h4>
+                                <p>Engaging Facebook posts to keep your community informed and engaged</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,6 +277,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <!-- How It Works Section -->
     <section class="how-it-works" id="how-it-works">
@@ -366,6 +490,7 @@
         </div>
     </div>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
