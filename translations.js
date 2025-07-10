@@ -11,8 +11,8 @@ const translations = {
         
         // Homepage
         hero: {
-            title: "Upgrade your Gym",
-            subtitle: "We help gyms reduce member dropout and increase retention",
+            title: "We help gyms increase their annual revenue",
+            subtitle: "Read about the 3 ways we can help your gym",
             description: "Your members quit because they don't know what to do or don't see results. Our app gives them structure, guidance, and measurable progress - keeping them engaged and coming back.",
             cta: "See How It Works - Get a Demo"
         },
@@ -247,8 +247,8 @@ const translations = {
         },
         // Homepage
         hero: {
-            title: "Jouw sportschool naar een hoger niveau",
-            subtitle: "Wij helpen sportscholen om leden langer te behouden en uitval te voorkomen",
+            title: "Wij helpen sportscholen met het verhogen van hun omzet",
+            subtitle: "Ontdek hoe wij op 3 manieren jouw sportschool kunnen helpen om meer omzet te maken",
             description: "Leden haken vaak af door gebrek aan structuur of resultaat. Met onze app bied je ze begeleiding, overzicht en motivatie – zo blijven ze betrokken en komen ze terug.",
             cta: "Ontdek hoe het werkt – Vraag een demo aan"
         },

@@ -153,7 +153,7 @@ p {
 
 /* Hero Section */
 .hero {
-    padding: 120px 0 80px;
+    padding: 0px 0 0px;
     background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
     min-height: 100vh;
     display: flex;
@@ -161,10 +161,35 @@ p {
 }
 
 .hero .container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 4rem; */
     align-items: center;
+}
+
+/* Center hero section text */
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wider hero content and responsive padding */
+.hero__content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media (max-width: 600px) {
+    .hero__content {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 .hero__title {
