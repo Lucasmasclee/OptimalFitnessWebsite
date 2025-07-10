@@ -65,19 +65,6 @@ const translations = {
                         }
                     ]
                 },
-                billing: {
-                    title: "Billing & Administration",
-                    items: [
-                        {
-                            title: "Automatic Direct Debit",
-                            description: "Seamless payment processing with automatic monthly billing"
-                        },
-                        {
-                            title: "Automatic Invoicing",
-                            description: "Professional invoices generated and sent automatically each month"
-                        }
-                    ]
-                },
                 email: {
                     title: "Email Marketing",
                     items: [
@@ -309,19 +296,6 @@ const translations = {
                         {
                             title: "QR-code activatie",
                             description: "Unieke QR-codes voor directe toegang tot de app"
-                        }
-                    ]
-                },
-                billing: {
-                    title: "Administratie & Facturatie",
-                    items: [
-                        {
-                            title: "Automatische incasso",
-                            description: "Maandelijkse betalingen lopen automatisch en veilig"
-                        },
-                        {
-                            title: "Facturen automatisch verstuurd",
-                            description: "Elke maand een heldere factuur, zonder omkijken"
                         }
                     ]
                 },
@@ -658,7 +632,7 @@ function updateElement(selector, text) {
 
 function updateServiceCategories(categories) {
     const categoryElements = document.querySelectorAll('.service__category');
-    const categoryKeys = ['design', 'delivery', 'billing', 'email', 'analytics', 'social'];
+    const categoryKeys = ['design', 'delivery', 'email', 'analytics', 'social'];
     
     categoryKeys.forEach((key, index) => {
         if (categoryElements[index] && categories[key]) {
